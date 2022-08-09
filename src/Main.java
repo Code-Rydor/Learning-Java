@@ -198,16 +198,33 @@ import java.util.Random;
 // }
 
 //? Object Oriented Programming ?//
+// public class Main {
+//     public static void main(String[] args) {
+//         // object - an instance of a class that may contain attributes and methods
+//         Car myCar1 = new Car();
+//         Car myCar2 = new Car();
+        
+//         System.out.println(myCar1.make);
+//         System.out.println(myCar1.model);
+//         System.out.println();
+//         System.out.println(myCar2.make);
+//         System.out.println(myCar2.model);
+//         //myCar.drive();
+//         //myCar.brake();
+
+//         // System.out.println(myCar2.make);
+//         // System.out.println(myCar2.model);
+//     }
+// }
+
 public class Main {
     public static void main(String[] args) {
-        // object - an instance of a class that may contain attributes and methods
-        Car myCar1 = new Car();
-        Car myCar2 = new Car();
-        
-        System.out.println(myCar1.make);
-        System.out.println(myCar1.model);
-        System.out.println();
-        System.out.println(myCar2.make);
-        System.out.println(myCar2.model);
+        // constructor - special method that is called when an object is instantiated (or created)
+        Human human = new Human("Garrett", 32, 210);
+        Human human2 = new Human("Angelica", 34, 200);
+        System.out.println(human.name);
+        System.out.println(human2.name);
+        human2.drink();
+        human.eat();
     }
 }

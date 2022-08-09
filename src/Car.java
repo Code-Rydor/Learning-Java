@@ -7,10 +7,10 @@ public class Car {
     double price = 90000.00;
 
     void drive() {
-        System.out.println("You drive the car"):
+        System.out.println("You drive the car");
     }
 
     void brake() {
-        System.out.println("You step on the breaks");
+        System.out.println("You step on the brakes");
     }
 }
