@@ -203,7 +203,7 @@ import java.util.Random;
 //         // object - an instance of a class that may contain attributes and methods
 //         Car myCar1 = new Car();
 //         Car myCar2 = new Car();
-        
+
 //         System.out.println(myCar1.make);
 //         System.out.println(myCar1.model);
 //         System.out.println();
@@ -236,22 +236,99 @@ import java.util.Random;
 //         //global = declared outside a method, but within a class, and visible to all parts of a class
 
 //         DiceRoller diceRoller = new DiceRoller();
-        
+
 //     }
 // }
+
+// public class Main {
+//     public static void main(String[] args) {
+
+//         // overloaded constructors = multiple constructors within a class with the same name, but have different parameters.
+//         // Name + Parameters = Signature
+
+//         Pizza pizza = new Pizza("thick crust", "tomato", "mozzarella", "pepperoni");
+
+//         System.out.println("Here are the ingredients for your pizza: ");
+//         System.out.println(pizza.bread);
+//         System.out.println(pizza.sauce);
+//         System.out.println(pizza.cheese);
+//         System.out.println(pizza.topping);
+//     }
+// }
+
+// public class Main { // toString method
+//     public static void main(String[] args) {
+
+//         // toString() = special method that all objects inherit, that returns a string that "textually represents" an object.
+//         // Can be used both implicitly and explicitly.
+
+//         Car car = new Car();
+
+//         System.out.println(car);
+//         // System.out.println(car.toString());
+//         // System.out.println(car.make);
+//         // System.out.println(car.model);
+//         // System.out.println(car.color);
+//         // System.out.println(car.year);
+
+//     }
+// }
+
+// public class Main { // Arrays of objects
+//     public static void main(String[] args) {
+
+//         // int[] numbers = new int[3];
+//         // char[] characters = new char[4];
+//         // String[] strings = new String[5];
+
+//         // Food[] refrigerator = new Food[3];
+
+//         Food food1 = new Food("pizza");
+//         Food food2 = new Food("hamburger");
+//         Food food3 = new Food("hotdog");
+
+//         Food[] refrigerator = { food1, food2, food3 };
+
+//         // refrigerator[0] = food1;
+//         // refrigerator[1] = food2;
+//         // refrigerator[2] = food3;
+
+//         System.out.println(refrigerator[0].name);
+//         System.out.println(refrigerator[1].name);
+//         System.out.println(refrigerator[2].name);
+
+//     }
+// }
+//?Inheritance ****************************//
+// public class Main {
+//     public static void main(String[] args) {
+
+//         Car car = new Car();
+
+//         car.go();
+
+//         Bicycle bike = new Bicycle();
+
+//         bike.stop();
+
+//         System.out.println(car.doors);
+//         System.out.println(bike.pedals);
+
+//     }
+// }
+
+//? Abstraction *******************
 
 public class Main {
     public static void main(String[] args) {
 
-        // overloaded constructors = multiple constructors within a class with the same name, but have different parameters.
-        // Name + Parameters = Signature
+        // abstract = abstract classes cannot be instantiated, but they can have a subclass.
+        // Abstract classes are declared without an implementation
 
-        Pizza pizza = new Pizza("thick crust", "tomato", "mozzarella", "pepperoni");
+        // Vehicle vehicle = new Vehicle();
+        Car car = new Car();
 
-        System.out.println("Here are the ingredients for your pizza: ");
-        System.out.println(pizza.bread);
-        System.out.println(pizza.sauce);
-        System.out.println(pizza.cheese);
-        System.out.println(pizza.topping);
+        car.go();
+
     }
 }
