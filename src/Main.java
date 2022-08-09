@@ -217,14 +217,41 @@ import java.util.Random;
 //     }
 // }
 
+// public class Main {
+//     public static void main(String[] args) {
+//         // constructor - special method that is called when an object is instantiated (or created)
+//         Human human = new Human("Garrett", 32, 210);
+//         Human human2 = new Human("Angelica", 34, 200);
+//         System.out.println(human.name);
+//         System.out.println(human2.name);
+//         human2.drink();
+//         human.eat();
+//     }
+// }
+
+// public class Main {
+//     public static void main(String[] args) {
+
+//         //local = declared inside a method and visible only to that method
+//         //global = declared outside a method, but within a class, and visible to all parts of a class
+
+//         DiceRoller diceRoller = new DiceRoller();
+        
+//     }
+// }
+
 public class Main {
     public static void main(String[] args) {
-        // constructor - special method that is called when an object is instantiated (or created)
-        Human human = new Human("Garrett", 32, 210);
-        Human human2 = new Human("Angelica", 34, 200);
-        System.out.println(human.name);
-        System.out.println(human2.name);
-        human2.drink();
-        human.eat();
+
+        // overloaded constructors = multiple constructors within a class with the same name, but have different parameters.
+        // Name + Parameters = Signature
+
+        Pizza pizza = new Pizza("thick crust", "tomato", "mozzarella", "pepperoni");
+
+        System.out.println("Here are the ingredients for your pizza: ");
+        System.out.println(pizza.bread);
+        System.out.println(pizza.sauce);
+        System.out.println(pizza.cheese);
+        System.out.println(pizza.topping);
     }
 }
