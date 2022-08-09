@@ -183,7 +183,7 @@ import java.util.Random;
 //             System.out.println("Brrr... Its cold outside!");
 //         }
 //         Scanner scanner = new Scanner(System.in);
-        
+
 //         System.out.println("You are playing a game. Press q or Q to quit");
 //         String response = scanner.next();
 
@@ -197,8 +197,17 @@ import java.util.Random;
 //     }
 // }
 
+//? Object Oriented Programming ?//
 public class Main {
     public static void main(String[] args) {
+        // object - an instance of a class that may contain attributes and methods
+        Car myCar1 = new Car();
+        Car myCar2 = new Car();
         
+        System.out.println(myCar1.make);
+        System.out.println(myCar1.model);
+        System.out.println();
+        System.out.println(myCar2.make);
+        System.out.println(myCar2.model);
     }
 }
