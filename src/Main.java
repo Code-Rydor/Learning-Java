@@ -349,21 +349,70 @@ import java.util.Random;
 // }
 
 //? Polymorphism // ******************************
+// public class Main {
+//     public static void main(String[] args) {
+
+//         // polymorphism - greek word for poly-"many", morph-"form"
+//         // The ability of an object to identify as more than one type
+
+//         Car car = new Car();
+//         Bicycle bike = new Bicycle();
+//         Boat boat = new Boat();
+
+//         Vehicle[] racers = { car, bike, boat };
+
+//         for (Vehicle x : racers) {
+//             x.go();
+//         }
+
+//     }
+// }
+
+// public class Main {
+//     public static void main(String[] args) {
+
+//         Scanner scanner = new Scanner(System.in);
+//         String name = "";
+
+//         while (name.isBlank()) {
+//             System.out.println("Enter your name: ");
+//             name = scanner.nextLine();
+//         }
+
+//         System.out.println("Hello " + name);
+
+//     }
+// }
+
+// public class Main {
+//     public static void main(String[] args) {
+
+//         // for (int i = 10; i >= 0; i -= 2) {
+//         //     System.out.println(i);
+//         // }
+
+//         for (int i = 3; i > 0; i--) {
+//             System.out.println(i);
+//         }
+
+//         System.out.println("Happy New Year!");
+
+//     }
+// }
+
+//? String Methods // ***********************
 public class Main {
     public static void main(String[] args) {
 
-        // polymorphism - greek word for poly-"many", morph-"form"
-        // The ability of an object to identify as more than one type
-
-        Car car = new Car();
-        Bicycle bike = new Bicycle();
-        Boat boat = new Boat();
-
-        Vehicle[] racers = { car, bike, boat };
-
-        for (Vehicle x : racers) {
-            x.go();
-        }
+        String name = "     Garrett     ";
+        // boolean result = name.equalsIgnoreCase("GArreTt");
+        // int result = name.length();
+        // char result = name.charAt(0); this equals 'G'
+        // int result = name.indexOf("e"); returns the index of the given string or character
+        // boolean result = name.isEmpty(); is the name variable empty? returns true or false
+        // String result = name.toUpperCase(); name.toLowerCase();
+        String result = name.trim();
+        System.out.println(result);
 
     }
 }
