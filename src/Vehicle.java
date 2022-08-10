@@ -1,6 +1,6 @@
 // Inheritance //
 // public class Vehicle {
-    
+
 //     double speed;
 
 //     void go() {
@@ -13,8 +13,17 @@
 
 // }
 
-public abstract class Vehicle {
+// Abstraction //
+// public abstract class Vehicle {
 
-    abstract void go();
-    
+//     abstract void go();
+
+// }
+
+// Polymorphism //
+public class Vehicle {
+
+    public void go() {
+
+    }
 }

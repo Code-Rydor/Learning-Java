@@ -333,17 +333,37 @@ import java.util.Random;
 //     }
 // }
 
+// public class Main {
+//     public static void main(String[] args) {
+
+//         // encapsulation = attributes of a class will be hidden or private, can be accessed only through methods (getters & setters)
+//         // You should make attributes private if you dont have a reason to make them public or protected
+
+//         Car car = new Car("Ford", "Mustang", 2021);
+//         car.setYear(2000);
+//         System.out.println(car.getMake());
+//         System.out.println(car.getModel());
+//         System.out.println(car.getYear());
+
+//     }
+// }
+
+//? Polymorphism // ******************************
 public class Main {
     public static void main(String[] args) {
 
-        // encapsulation = attributes of a class will be hidden or private, can be accessed only through methods (getters & setters)
-        // You should make attributes private if you dont have a reason to make them public or protected
+        // polymorphism - greek word for poly-"many", morph-"form"
+        // The ability of an object to identify as more than one type
 
-        Car car = new Car("Ford", "Mustang", 2021);
-        car.setYear(2000);
-        System.out.println(car.getMake());
-        System.out.println(car.getModel());
-        System.out.println(car.getYear());
+        Car car = new Car();
+        Bicycle bike = new Bicycle();
+        Boat boat = new Boat();
+
+        Vehicle[] racers = { car, bike, boat };
+
+        for (Vehicle x : racers) {
+            x.go();
+        }
 
     }
 }
