@@ -324,9 +324,9 @@ import java.util.Random;
 //     public static void main(String[] args) {
 
 //          abstract = abstract classes cannot be instantiated, but they can have a subclass.
-//          Abstract classes are declared without an implementation
+//          Abstract classes are declared without an implementation, can also have abstract methods that do not have a body
 
-//          Vehicle vehicle = new Vehicle();
+//         Vehicle vehicle = new Vehicle(); Cannot instantiate a instance of an abstract class... its too vague.
 //         Car car = new Car();
 
 //         car.go();
@@ -463,16 +463,39 @@ import java.util.Random;
 // }
 
 //? Static keyword //
+// public class Main {
+//     public static void main(String[] args) {
+//         // static = modifier. A single copy of a variable/method is created and shared.
+//         // The class "owns" the static member
+
+//         Friend friend1 = new Friend("Tex");
+//         Friend friend2 = new Friend("Burke");
+//         Friend friend3 = new Friend("Diego");
+//         Friend friend4 = new Friend("Kado");
+
+//         Friend.displayFriends();
+//     }
+// }
+
+//? Super keyword //
+// public class Main {
+//     public static void main(String[] args) {
+//          super = keyword refers to the superclass (parent) of an object
+//          very similar to the "this" keyword
+
+//         Hero hero1 = new Hero("Flash", 25, "Speed");
+//         Hero hero2 = new Hero("Green Lantern", 37, "Ring harnessing 'will power'");
+
+//         System.out.println(hero1.toString());
+//         System.out.println(hero2.toString());
+//     }
+// }
+
+
 public class Main {
     public static void main(String[] args) {
-        // static = modifier. A single copy of a variable/method is created and shared.
-        // The class "owns" the static member
 
-        Friend friend1 = new Friend("Tex");
-        Friend friend2 = new Friend("Burke");
-        Friend friend3 = new Friend("Diego");
-        Friend friend4 = new Friend("Kado");
 
-        Friend.displayFriends();
+
     }
 }
