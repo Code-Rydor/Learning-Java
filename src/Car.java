@@ -15,7 +15,7 @@
 //     }
 // }
 // public class Car { // override the toString method
-                      // toString method normally calls the location of the object, override it to call the characteristics
+// toString method normally calls the location of the object, override it to call the characteristics
 
 //     String make = "Dodge";
 //     String model = "Ram TRX";
@@ -97,3 +97,14 @@
 //         System.out.println("The car begins moving");
 //     }
 // }
+
+//? Pass objects as arguments to methods //
+public class Car {
+
+    String name;
+
+    Car(String name) {
+        this.name = name;
+    }
+
+}

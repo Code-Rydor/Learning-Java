@@ -290,9 +290,9 @@ import java.util.Random;
 
 //         Food[] refrigerator = { food1, food2, food3 };
 
-//          refrigerator[0] = food1;
-//          refrigerator[1] = food2;
-//          refrigerator[2] = food3;
+//          // refrigerator[0] = food1;
+//          // refrigerator[1] = food2;
+//          // refrigerator[2] = food3;
 
 //         System.out.println(refrigerator[0].name);
 //         System.out.println(refrigerator[1].name);
@@ -407,12 +407,12 @@ import java.util.Random;
 //     public static void main(String[] args) {
 
 //         String name = "     Garrett     ";
-//         // boolean result = name.equalsIgnoreCase("GArreTt");
-//         // int result = name.length();
-//         // char result = name.charAt(0); this equals 'G'
-//         // int result = name.indexOf("e"); returns the index of the given string or character
-//         // boolean result = name.isEmpty(); is the name variable empty? returns true or false
-//         // String result = name.toUpperCase(); name.toLowerCase();
+// boolean result = name.equalsIgnoreCase("GArreTt");
+// int result = name.length();
+// char result = name.charAt(0); this equals 'G'
+// int result = name.indexOf("e"); returns the index of the given string or character
+// boolean result = name.isEmpty(); is the name variable empty? returns true or false
+// String result = name.toUpperCase(); name.toLowerCase();
 //         String result = name.trim();
 //         System.out.println(result);
 
@@ -437,8 +437,42 @@ import java.util.Random;
 //     }
 // }
 
+//? Pass objects as arguments to methods // ***********************
+// public class Main {
+//     public static void main(String[] args) {
+
+//         Garage garage = new Garage();
+
+//         Car car1 = new Car("Mustang");
+//         Car car2 = new Car("Truck");
+
+//         garage.park(car1);
+//         garage.park(car2);
+
+//         Cage cage = new Cage();
+
+//         Animal animal1 = new Animal("Dog");
+//         Animal animal2 = new Animal("Cat");
+
+//         cage.put_in(animal1);
+//         cage.put_in(animal2);
+//         garage.park(animal1);
+
+
+//     }
+// }
+
+//? Static keyword //
 public class Main {
     public static void main(String[] args) {
+        // static = modifier. A single copy of a variable/method is created and shared.
+        // The class "owns" the static member
 
+        Friend friend1 = new Friend("Tex");
+        Friend friend2 = new Friend("Burke");
+        Friend friend3 = new Friend("Diego");
+        Friend friend4 = new Friend("Kado");
+
+        Friend.displayFriends();
     }
 }
