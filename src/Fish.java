@@ -1,3 +1,4 @@
+//? Interface //
 public class Fish implements Prey, Predator{
     
     @Override

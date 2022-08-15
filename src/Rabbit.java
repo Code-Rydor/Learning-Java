@@ -1,3 +1,4 @@
+//? Interface //
 public class Rabbit implements Prey {
     
     @Override
