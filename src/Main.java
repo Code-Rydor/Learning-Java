@@ -3,6 +3,7 @@ import java.util.Scanner;
 import javax.swing.plaf.TreeUI;
 import javax.xml.namespace.QName;
 
+import java.util.ArrayList;
 import java.util.Random;
 // public class Main {
 //     public static void main(String[] args) {
@@ -219,7 +220,7 @@ import java.util.Random;
 
 // public class Main {
 //     public static void main(String[] args) {
-//         // constructor - special method that is called when an object is instantiated (or created)
+//          constructor - special method that is called when an object is instantiated (or created)
 //         Human human = new Human("Garrett", 32, 210);
 //         Human human2 = new Human("Angelica", 34, 200);
 //         System.out.println(human.name);
@@ -232,8 +233,8 @@ import java.util.Random;
 // public class Main {
 //     public static void main(String[] args) {
 
-//         //local = declared inside a method and visible only to that method
-//         //global = declared outside a method, but within a class, and visible to all parts of a class
+//         local = declared inside a method and visible only to that method
+//         global = declared outside a method, but within a class, and visible to all parts of a class
 
 //         DiceRoller diceRoller = new DiceRoller();
 
@@ -243,8 +244,8 @@ import java.util.Random;
 // public class Main {
 //     public static void main(String[] args) {
 
-//         // overloaded constructors = multiple constructors within a class with the same name, but have different parameters.
-//         // Name + Parameters = Signature
+//          overloaded constructors = multiple constructors within a class with the same name, but have different parameters.
+//          Name + Parameters = Signature
 
 //         Pizza pizza = new Pizza("thick crust", "tomato", "mozzarella", "pepperoni");
 
@@ -259,17 +260,17 @@ import java.util.Random;
 // public class Main { // toString method
 //     public static void main(String[] args) {
 
-//         // toString() = special method that all objects inherit, that returns a string that "textually represents" an object.
-//         // Can be used both implicitly and explicitly.
+//          toString() = special method that all objects inherit, that returns a string that "textually represents" an object.
+//          Can be used both implicitly and explicitly.
 
 //         Car car = new Car();
 
 //         System.out.println(car);
-//         // System.out.println(car.toString());
-//         // System.out.println(car.make);
-//         // System.out.println(car.model);
-//         // System.out.println(car.color);
-//         // System.out.println(car.year);
+//          System.out.println(car.toString());
+//          System.out.println(car.make);
+//          System.out.println(car.model);
+//          System.out.println(car.color);
+//          System.out.println(car.year);
 
 //     }
 // }
@@ -277,11 +278,11 @@ import java.util.Random;
 // public class Main { // Arrays of objects
 //     public static void main(String[] args) {
 
-//         // int[] numbers = new int[3];
-//         // char[] characters = new char[4];
-//         // String[] strings = new String[5];
+//          int[] numbers = new int[3];
+//          char[] characters = new char[4];
+//          String[] strings = new String[5];
 
-//         // Food[] refrigerator = new Food[3];
+//          Food[] refrigerator = new Food[3];
 
 //         Food food1 = new Food("pizza");
 //         Food food2 = new Food("hamburger");
@@ -289,9 +290,9 @@ import java.util.Random;
 
 //         Food[] refrigerator = { food1, food2, food3 };
 
-//         // refrigerator[0] = food1;
-//         // refrigerator[1] = food2;
-//         // refrigerator[2] = food3;
+//          refrigerator[0] = food1;
+//          refrigerator[1] = food2;
+//          refrigerator[2] = food3;
 
 //         System.out.println(refrigerator[0].name);
 //         System.out.println(refrigerator[1].name);
@@ -322,10 +323,10 @@ import java.util.Random;
 // public class Main {
 //     public static void main(String[] args) {
 
-//         // abstract = abstract classes cannot be instantiated, but they can have a subclass.
-//         // Abstract classes are declared without an implementation
+//          abstract = abstract classes cannot be instantiated, but they can have a subclass.
+//          Abstract classes are declared without an implementation
 
-//         // Vehicle vehicle = new Vehicle();
+//          Vehicle vehicle = new Vehicle();
 //         Car car = new Car();
 
 //         car.go();
@@ -333,11 +334,12 @@ import java.util.Random;
 //     }
 // }
 
+//? Encapsulation //*********************
 // public class Main {
 //     public static void main(String[] args) {
 
-//         // encapsulation = attributes of a class will be hidden or private, can be accessed only through methods (getters & setters)
-//         // You should make attributes private if you dont have a reason to make them public or protected
+//          encapsulation = attributes of a class will be hidden or private, can be accessed only through methods (getters & setters)
+//          You should make attributes private if you dont have a reason to make them public or protected
 
 //         Car car = new Car("Ford", "Mustang", 2021);
 //         car.setYear(2000);
@@ -352,8 +354,8 @@ import java.util.Random;
 // public class Main {
 //     public static void main(String[] args) {
 
-//         // polymorphism - greek word for poly-"many", morph-"form"
-//         // The ability of an object to identify as more than one type
+//          polymorphism - greek word for poly-"many", morph-"form"
+//          The ability of an object to identify as more than one type
 
 //         Car car = new Car();
 //         Bicycle bike = new Bicycle();
@@ -401,18 +403,42 @@ import java.util.Random;
 // }
 
 //? String Methods // ***********************
+// public class Main {
+//     public static void main(String[] args) {
+
+//         String name = "     Garrett     ";
+//         // boolean result = name.equalsIgnoreCase("GArreTt");
+//         // int result = name.length();
+//         // char result = name.charAt(0); this equals 'G'
+//         // int result = name.indexOf("e"); returns the index of the given string or character
+//         // boolean result = name.isEmpty(); is the name variable empty? returns true or false
+//         // String result = name.toUpperCase(); name.toLowerCase();
+//         String result = name.trim();
+//         System.out.println(result);
+
+//     }
+// }
+
+// public class Main {
+//     public static void main(String[] args) {
+
+//         ArrayList<String> food = new ArrayList<String>();
+
+//         food.add("pizza");
+//         food.add("hamburger");
+//         food.add("hotdog");
+
+//         food.set(0, "sushi");
+
+//         for (int i = 0; i < food.size(); i++) {
+//             System.out.println(food.get(i));
+//         }
+
+//     }
+// }
+
 public class Main {
     public static void main(String[] args) {
-
-        String name = "     Garrett     ";
-        // boolean result = name.equalsIgnoreCase("GArreTt");
-        // int result = name.length();
-        // char result = name.charAt(0); this equals 'G'
-        // int result = name.indexOf("e"); returns the index of the given string or character
-        // boolean result = name.isEmpty(); is the name variable empty? returns true or false
-        // String result = name.toUpperCase(); name.toLowerCase();
-        String result = name.trim();
-        System.out.println(result);
 
     }
 }

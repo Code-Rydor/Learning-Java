@@ -15,6 +15,7 @@
 //     }
 // }
 // public class Car { // override the toString method
+                      // toString method normally calls the location of the object, override it to call the characteristics
 
 //     String make = "Dodge";
 //     String model = "Ram TRX";
@@ -23,7 +24,11 @@
 
 //     public String toString() {
 
-//         // String myString = make + "\n" + model + "\n" + color + "\n" + year + "\n";
+//          String myString = make + "\n" + model + "\n" + color + "\n" + year + "\n";
+//          return myString;
+
+//              or
+
 //         return make + "\n" + model + "\n" + color + "\n" + year + "\n";
 //     }
 
